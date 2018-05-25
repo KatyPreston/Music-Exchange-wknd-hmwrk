@@ -1,4 +1,4 @@
-public abstract class Instrument {
+public abstract class Instrument implements IPlay {
     private String type;
     private String colour;
     private double priceBought;
@@ -17,4 +17,19 @@ public abstract class Instrument {
         return this.priceSell - this.priceBought;
     }
 
+    public String getType(){
+        return this.type;
+    }
+
+    public String getColour(){
+        return this.colour;
+    }
+
+    public double getPriceBought() {
+        return this.priceBought;
+    }
+
+    public double getPriceSell() {
+        return this.priceSell;
+    }
 }
