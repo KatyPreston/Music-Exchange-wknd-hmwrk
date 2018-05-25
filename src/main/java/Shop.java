@@ -36,4 +36,12 @@ public class Shop {
         this.funds += iSell.getPriceSell();
         this.removeItemFromStock(iSell);
     }
+
+    public double maxTotalProfits(){
+        double total = 0;
+        for(ISell iSell : this.stock){
+            total += iSell.calculateMarkup();
+        }
+        return total;
+    }
 }
