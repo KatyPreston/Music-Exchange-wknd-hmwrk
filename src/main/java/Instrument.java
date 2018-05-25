@@ -11,6 +11,8 @@ public abstract class Instrument implements IPlay, ISell {
         this.priceSell = priceSell;
     }
 
+
+
     public abstract String play();
 
     public double calculateMarkup(){

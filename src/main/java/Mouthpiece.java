@@ -9,6 +9,8 @@ public class Mouthpiece implements ISell{
         this.priceSell = priceSell;
     }
 
+
+
     public String getType(){
         return this.type;
     }
